@@ -227,3 +227,18 @@
     transform: rotate(0deg);
   }
 }
+
+.payButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.payButton:hover {
+  background-color: #005bb5;
+}

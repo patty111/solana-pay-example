@@ -1,5 +1,10 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
+import { establishConnection } from "@/utils/establishConnection"
 export default function handler(req, res) {
-  res.status(200).json({ name: "John Doe" });
+  if (req.method === 'POST') {
+    res.status(200).json({ 'message': 'POST request sent' } )
+  }
+  if (req.method === 'GET') {
+    establishConnection()
+    res.status(200).json({ 'message': 'GET request sent' } )
+  }
 }
