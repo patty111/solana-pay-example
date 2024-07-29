@@ -9,7 +9,7 @@ import BigNumber from 'bignumber.js';
 export default function Home() {
   const qrRef = useRef(null);
 
-  const recipient = new PublicKey('2sCbjskDpdT8P7K1uFkCwsRVF8q1YSPzDepqdkgkYdD9');
+  const recipient = new PublicKey('your-address');
   const reference = new Keypair().publicKey;
   const amount = 0;
   // const amount = new BigNumber(0.5);
